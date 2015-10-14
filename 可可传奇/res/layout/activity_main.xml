@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity" >
+
+    <com.cocolegend.view.NoScrollViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- 下部分 -->
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:padding="5dp"
+        android:background="@color/bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_rb_home"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_rb_classify"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tab_classify_selector"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/main_rb_shoppingcar"
+           style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tab_shoppingcar_selector"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/main_rb_mine"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tab_mine_selector"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>
